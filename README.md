@@ -16,7 +16,7 @@ A conda package manager like [Miniconda3](https://docs.conda.io/en/latest/minico
 
 1.  Download the initial environment installation file 
    ```
-   wget https://raw.githubusercontent.com/jsede/virus_assembly/main/scripts/install_env.sh
+   wget https://raw.githubusercontent.com/laulambr/virus_assembly/main/scripts/install_env.sh
    ```
 2. Run the script in the terminal 
   ```
