@@ -68,7 +68,7 @@ cd $IN_DIR
 
 #quality trim reads with bbduk/37.99
 while read i; do
-bbduk.sh -Xmx"$MEMORY"g threads="$THREADS" in=$IN_DIR/1_reads/"$i"_1.fastq.gz in2=$IN_DIR/1_reads/"$i"_2.fastq.gz out=stdout.fq ref=phix k=31 hdist=1 | bbduk.sh -Xmx"$MEMORY"g threads="$THREADS" interleaved=true in=stdin.fq out=stdout.fq ref=adapters ktrim=r k=17 mink=3 | bbduk.sh -Xmx"$MEMORY"g threads="$THREADS" interleaved=true in=stdin.fq out=$IN_DIR/1_reads/"$i"_trim_1.fastq.gz out2=$IN_DIR/1_reads/"$i"_trim_2.fastq.gz minlen=50 qtrim=rl trimq=20 entropy=0.7
+bbduk.sh -Xmx"$MEMORY"g threads="$THREADS" in=$IN_DIR/1_reads/"$i"_*_R1_001.fastq.gz in2=$IN_DIR/1_reads/"$i"_*_R2_001.fastq.gz out=stdout.fq ref=phix k=31 hdist=1 | bbduk.sh -Xmx"$MEMORY"g threads="$THREADS" interleaved=true in=stdin.fq out=stdout.fq ref=adapters ktrim=r k=17 mink=3 | bbduk.sh -Xmx"$MEMORY"g threads="$THREADS" interleaved=true in=stdin.fq out=$IN_DIR/1_reads/"$i"_trim_1.fastq.gz out2=$IN_DIR/1_reads/"$i"_trim_2.fastq.gz minlen=50 qtrim=rl trimq=20 entropy=0.7
 done < $IN_DIR/IDs.list
 
 #normalise read coverage for denovo assembly
