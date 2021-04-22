@@ -38,8 +38,6 @@ dependencies:
 
 conda env create -f ./virus_assembly.yml
 
-rm ./virus_assembly.yml
-
 # activate new environment
 source $CONDA_PREFIX/etc/profile.d/conda.sh
 conda activate virus_assembly
