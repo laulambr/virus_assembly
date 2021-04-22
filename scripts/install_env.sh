@@ -40,6 +40,10 @@ conda env create -f ./virus_assembly.yml
 
 rm ./virus_assembly.yml
 
+# activate new environment
+
+conda activate virus_assembly
+
 # Download github 
 
 git clone \
@@ -47,7 +51,7 @@ git clone \
   $CONDA_PREFIX/virus_assembly
 
 
-  # Create links to pipeline
+# Create links to pipeline
   
 find \
   $CONDA_PREFIX/virus_assembly/ \
@@ -57,3 +61,7 @@ find \
 ln -s \
   $CONDA_PREFIX/virus_assembly/virus_assembly.sh \
   $CONDA_PREFIX/bin/virus_assembly
+
+# Clean installation
+rm ./virus_assembly.yml
+rm ./install_env.sh
