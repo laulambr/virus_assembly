@@ -43,7 +43,7 @@ rm ./virus_assembly.yml
 # Download github 
 
 git clone \
-  https://raw.githubusercontent.com/jsede/virus_assembly.git \
+  https://raw.githubusercontent.com/laulambr/virus_assembly.git \
   $CONDA_PREFIX/virus_assembly
 
 
