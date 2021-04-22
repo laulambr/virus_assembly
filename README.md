@@ -73,11 +73,11 @@ with:
    ```
  cd $CONDA_PREFIX/virus_assembly/test_data
   ```
-  4. Run the following command
+  3. Run the following command
    ```
  virus_assembly -i $CONDA_PREFIX/virus_assembly/test_data -s HIV
   ```
-  6. The pipeline will run, check the newly created 5_read directory for a fasta file containing the new de novo assembled HIV-1 provirus.
+  4. The pipeline will run, check the newly created 5_read directory for a fasta file containing the new de novo assembled HIV-1 provirus.
    
   ### Included viral reference genomes
   * **HIV**: K03455.1
