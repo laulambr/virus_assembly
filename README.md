@@ -1,8 +1,10 @@
 # virus_assembly
 
-A bash pipeline for de novo assembly of viral genomes generated via Illumina NGS. Currently handles the following viruses: HIV-1, RSV, RRV and HMPV.
+A bash pipeline for the *de novo* assembly of viral genomes generated via Illumina NGS. Currently handles the following viruses: HIV-1, RSV, RRV and HMPV.
+This pipelince includes quality checks and reports via [FastQc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc) and [MultiQC](https://multiqc.info/), trimming and mapping of reads via [BBTools](sourceforge.net/projects/bbmap/) and de novo assembly using [MEGAHIT](https://github.com/voutcn/megahit).
 
 Current version: V1
+
 
 **Table of contents**
 - [System Requirements](#system-requirements)
@@ -17,7 +19,6 @@ The pipeline can be run on either a standard computer or a HPC server. We tested
 
 RAM: 16+ GB
 CPU: 4+ cores, @1.90 GHz
-
 
 ## Software requirements
 ### OS requirements
@@ -41,10 +42,8 @@ A conda package manager like [Miniconda3](https://docs.conda.io/en/latest/minico
   bash ./Miniconda3-latest-Linux-x86_64.sh
   ```
 
-
 # Installation
 Time to install the pipeline took less than 15 minutes on standard desktop computer.
-
 
 1.  Download the initial environment installation file 
    ```
@@ -117,4 +116,3 @@ We provide an example analysis using pre-installed test data, which took less th
   * **RSV**: MH760627; MH760652
   * **RRV**: RRV_ref (Accession pending)
   * **HMPV**: HMPV205; HMPV218 (Accessions pending)
-
