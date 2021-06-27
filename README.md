@@ -37,7 +37,7 @@ A conda package manager like [Miniconda3](https://docs.conda.io/en/latest/minico
   ```
   chmod +x Miniconda3-latest-Linux-x86_64.sh
   ```
-3. un miniconda installation script
+3. Run miniconda installation script
   ```
   bash ./Miniconda3-latest-Linux-x86_64.sh
   ```
