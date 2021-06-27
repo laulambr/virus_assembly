@@ -1,7 +1,7 @@
 # virus_assembly
 
 A bash pipeline for the *de novo* assembly of viral genomes generated via Illumina NGS. Currently handles the following viruses: HIV-1, RSV, RRV and HMPV.
-This pipelince includes quality checks and reports via [FastQc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc) and [MultiQC](https://multiqc.info/), trimming and mapping of reads via [BBTools](sourceforge.net/projects/bbmap/) and de novo assembly using [MEGAHIT](https://github.com/voutcn/megahit).
+This pipeline includes quality checks and reports via [FastQc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc) and [MultiQC](https://multiqc.info/), trimming and mapping of reads via [BBTools](sourceforge.net/projects/bbmap/) and de novo assembly using [MEGAHIT](https://github.com/voutcn/megahit).
 
 Current version: V1
 
